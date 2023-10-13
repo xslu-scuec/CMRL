@@ -2,7 +2,7 @@
 
 Code for paper "Cross-Modality Representation Learning for Segmentation and Registration of Multi-Modal Medical Images". 
 
-![](img\Architecture overview.png?raw=true)
+![CMRL](img/Architecture overview.png?raw=true)
 
 ## Environment
 

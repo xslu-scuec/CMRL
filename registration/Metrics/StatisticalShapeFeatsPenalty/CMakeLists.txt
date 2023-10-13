@@ -1,0 +1,10 @@
+
+ADD_ELXCOMPONENT( StatisticalShapeFeatsPenalty
+ elxStatisticalShapeFeatsPenalty.h
+ elxStatisticalShapeFeatsPenalty.hxx
+ elxStatisticalShapeFeatsPenalty.cxx
+ itkStatisticalShapePointFeatsPenalty.h
+ itkStatisticalShapePointFeatsPenalty.txx
+)
+
+

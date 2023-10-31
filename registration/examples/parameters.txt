@@ -8,11 +8,11 @@
 
 // ********** Components
 
-(Registration "MultiMetricMultiResolutionRegistrationWithFeatures")
+(Registration "MultiResolutionRegistrationWithFeatures")
 (FixedImagePyramid "FixedSmoothingImagePyramid" "FixedSmoothingImagePyramid" "FixedSmoothingImagePyramid" "FixedSmoothingImagePyramid" "FixedSmoothingImagePyramid" "FixedSmoothingImagePyramid" "FixedSmoothingImagePyramid")
 (MovingImagePyramid "MovingSmoothingImagePyramid" "MovingSmoothingImagePyramid" "MovingSmoothingImagePyramid" "MovingSmoothingImagePyramid" "MovingSmoothingImagePyramid" "MovingSmoothingImagePyramid" "MovingSmoothingImagePyramid")
 (Interpolator "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator" "BSplineInterpolator")
-(Metric "KNNGraphAlphaMutualInformation" "StatisticalShapeFeatsPenalty")
+(Metric "KNNGraphAlphaMutualInformation")
 (Optimizer "StandardGradientDescent")
 (ResampleInterpolator "FinalBSplineInterpolator")
 (Resampler "DefaultResampler")
@@ -51,9 +51,6 @@
 
 // ********** Metric
 
-(Metric0Weight 1 1 1)
-(Metric1Weight 0.8 0.7 0.6)
-
 (Alpha 0.99)
 (AvoidDivisionBy 0.0000000001)
 (TreeType "KDTree")
@@ -63,13 +60,6 @@
 (TreeSearchType "Standard")
 (KNearestNeighbours 5)
 (ErrorBound 10.0)
-
-(NormalizedShapeModel "false")
-(ShapeModelCalculation 0)
-(ShrinkageIntensityFeats 0.2)
-(BaseVarianceFeats 1000.0)
-(CutOffValue 0)
-(SubtractMean "true")
 
 
 // ********** Several
